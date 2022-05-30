@@ -1,9 +1,13 @@
 """Maximum profit in single transaction"""
 def maxprofit(arr):
-  mi = min(arr)
-  profit = 0
-  for i , v in enumerate(arr):
-    if arr.index(mi) < i and v - mi > profit:
-      profit = v - mi
-  print(profit)
-
+  left = 0
+  right = 1
+  mxprofit = 0
+  while right < len(arr):
+    curr_prof = arr[right] - arr[left]
+    if arr[left] < arr[right]: 
+      mxprofit = max(curr_prof,mxprofit)
+    else:
+      left = right
+    right+=1
+  print(mxprofit)
