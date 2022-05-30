@@ -1,0 +1,22 @@
+[
+  {
+  "stack_id": "1",
+  "server": "server1",
+  "type": "file|package|service",
+  "mode": "755",
+  "group": "root",
+  "owner": "root",
+  "action": "create",
+  "dest": "/etc"
+},
+{
+  "stack_id": "2",
+  "server": "server2",
+  "type": "file",
+  "mode": "755",
+  "group": "root",
+  "owner": "root",
+  "action": "create",
+  "dest": "/etc"
+}
+]
