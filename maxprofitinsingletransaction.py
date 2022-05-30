@@ -7,8 +7,3 @@ def maxprofit(arr):
       profit = v - mi
   print(profit)
 
-
-
-
-arr = [9,11,8,25,7,10,30,60]
-maxprofit(arr)
